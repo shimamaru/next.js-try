@@ -6,7 +6,6 @@ import Logo from '@/components/Logo'
 const montserrat = Montserrat({ subsets: ['latin'] ,variables: "--font-mont",}
 )
 
-
 export default function App({ Component, pageProps }) {
   return (
     <>
