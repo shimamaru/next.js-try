@@ -1,27 +1,33 @@
 import React from "react";
 import Link from "next/link";
-import Logo from "./Logo";
+import { useRouter } from "next/router";
+import TwitterIcons from "./Icons";
 
-const CustomLink = ({ href, title, className="" }) => {
+const CustomLink = ({ href, title, className = "" }) => {
+  const router = useRouter();
+  console.log(router);
   return (
-    <Link href={href}>
+    <Link href={href} className={`${className} relative group`}>
       {title}
-      </Link>
-    );
+      <span className="h-[1px] inline-block bg-black w-0 absolute left-0 bottom-0 group-hover:w-full transition-[width] ease duration-300">
+        &nbsp;
+      </span>
+    </Link>
+  );
 };
 
 const NavBar = () => {
   return (
     <header className="w-full px-32 py-8 flex items-center ">
-      Nav-bar
-      <nav>
-        <Link href="/">Home</Link>
-        <Link href="/about">Home</Link>
-        <Link href="/projects">Home</Link>
-        <Link href="/articles">Home</Link>
+      <nav className="">
+        <CustomLink href="/" title="Home" className="mr-4" />
+        <CustomLink href="/about" title="About" className="mr-4" />
+        <CustomLink href="/projects" title="Projects" className="mr-4" />
+        <CustomLink href="/articles" title="Articles" className="mr-4" />
       </nav>
-      <h2>Logo</h2>
-      <Link href="/" target={"_blank"}></Link>
+      <Link href="/" target={"_blank"}>
+        <TwitterIcons />
+      </Link>
     </header>
   );
 };
