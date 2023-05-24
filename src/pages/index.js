@@ -4,8 +4,8 @@ import Link from "next/link";
 import { Inter } from "next/font/google";
 import profilePic from "../../public/images/profile/developer-pic-1.png";
 import Layout from "../components/Layout";
-import AnimatedText from "@/components/AnimatedText";
-import { LinkArrow } from "@/components/Icons";
+import AnimatedText from "../components/AnimatedText";
+import { LinkArrow } from "../components/Icons";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
