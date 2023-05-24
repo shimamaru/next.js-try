@@ -1,7 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import TwitterIcons from "./Icons";
+import {
+  GithubIcon,
+  TwitterIcon,
+  LinkedInIcon,
+  PinterestIcon,
+  DribbbleIcon,
+} from "../components/Icons";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -18,16 +24,30 @@ const CustomLink = ({ href, title, className = "" }) => {
 
 const NavBar = () => {
   return (
-    <header className="w-full px-32 py-8 flex items-center ">
+    <header className="flex items-center justify-between w-full px-24 py-8 ">
       <nav className="">
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mr-4" />
         <CustomLink href="/projects" title="Projects" className="mr-4" />
         <CustomLink href="/articles" title="Articles" className="mr-4" />
       </nav>
-      <Link href="/" target={"_blank"}>
-        <TwitterIcons />
-      </Link>
+      <nav className="flex space-x-4 item-center">
+        <Link href="/" target={"_blank"}>
+          <GithubIcon />
+        </Link>
+        <Link href="/" target={"_blank"}>
+          <TwitterIcon />
+        </Link>
+        <Link href="/" target={"_blank"}>
+          <LinkedInIcon />
+        </Link>
+        <Link href="/" target={"_blank"}>
+          <PinterestIcon />
+        </Link>
+        <Link href="/" target={"_blank"}>
+          <DribbbleIcon />
+        </Link>
+      </nav>
     </header>
   );
 };
