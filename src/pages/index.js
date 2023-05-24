@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-
 import { Inter } from "next/font/google";
 import profilePic from "../../public/images/profile/developer-pic-1.png";
 import Layout from "../components/Layout";
@@ -20,7 +19,7 @@ export default function Home() {
       </Head>
       <main>
         <Layout>
-          <div className="flex items-center justify-center w-full">
+          <div className="flex items-center justify-center w-full mb-10 ">
             <div className="flex items-center justify-center w-1/2">
               <Image
                 src={profilePic}
@@ -30,10 +29,7 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col items-center self-center justify-center w-1/2 text-left ">
-              <AnimatedText
-                text={"Turning Vision Into Reality With Code And Design."}
-                className="!text-4xl text-left"
-              />
+              <AnimatedText className="!text-4xl text-left" />
               <p>
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest

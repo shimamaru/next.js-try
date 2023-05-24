@@ -24,7 +24,7 @@ const AnimatedText = ({ text, className = "" }) => {
         initial="initial"
         animate="animate"
       >
-        {text}
+        Turning Vision Into Reality With Code And Design.
       </motion.h1>
     </div>
   );
