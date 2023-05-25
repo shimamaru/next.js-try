@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
 import profilePic from "../../public/images/profile/developer-pic-1.png";
+
 import Layout from "../components/Layout";
 import AnimatedText from "../components/AnimatedText";
 import { LinkArrow } from "../components/Icons";
@@ -27,6 +28,7 @@ export default function Home() {
                 alt="Picture of the author"
                 width={500}
                 height={500}
+                className="rounded-full"
               />
             </div>
             <div className="flex flex-col items-center self-center justify-center w-1/2 text-left ">

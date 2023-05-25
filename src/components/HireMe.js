@@ -1,5 +1,7 @@
 import React from "react";
 import webDeveloperImage from "../../public/images/new/webDev.png";
+import UIUXImage from "../../public/images/new/WebUl:UX.png";
+
 import Image from "next/image";
 
 const HireMe = () => {
