@@ -6,6 +6,7 @@ import profilePic from "../../public/images/profile/developer-pic-1.png";
 import Layout from "../components/Layout";
 import AnimatedText from "../components/AnimatedText";
 import { LinkArrow } from "../components/Icons";
+import HireMe from "../components/HireMe";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -42,7 +43,8 @@ export default function Home() {
                   target="_blank"
                   className="flex items-center justify-center w-32 h-12 px-2 py-1 mt-4 mr-4 text-black bg-white border-2 rounded-md font-smbold hover:bg-gray-200 "
                 >
-                  Contact <LinkArrow className="w-6 ml-1" />
+                  Contact
+                  <LinkArrow className="w-6 ml-1" />
                 </Link>
                 <Link
                   href="/"
@@ -54,6 +56,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <HireMe />
         </Layout>
       </main>
     </>
